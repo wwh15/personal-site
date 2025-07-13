@@ -8,54 +8,57 @@ import heroBg from "@/assets/hero-bg.jpg";
 const Index = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Corp",
-      period: "2022 - Present",
-      description: "Led development of scalable web applications using React and Node.js. Mentored junior developers and improved system performance by 40%."
+      title: "Software Engineer Intern",
+      company: "Capital One",
+      period: "Jun. 2025 - Present",
+      location: "Richmond, VA",
+      description: "Building an audit log system using NestJS to track and display changes made to over 10,000 SKUs, improving agent triage time by 200%. Integrating SevenRooms API via backend service layer to automate restaurant bookings, reducing scheduling time. Leveraging event-driven architecture to enable real-time SevenRooms match results and audit log updates, handling over 1,000 asynchronous events daily."
     },
     {
-      title: "Full Stack Developer",
-      company: "Startup XYZ",
-      period: "2020 - 2022", 
-      description: "Built end-to-end features for SaaS platform. Collaborated with cross-functional teams to deliver high-quality products."
+      title: "Software Engineer Intern",
+      company: "Yext",
+      period: "Jun. 2024 - Aug. 2024",
+      location: "Washington D.C.",
+      description: "Developed REST API endpoints for review categorization, allowing users to group reviews by themes for more insights. Achieved a 40x performance improvement by refactoring a network call, resolving latency issues caused by large review volumes from a platform migration. Extended database schema and updated CRUD operations to support pre-defined review themes, aligning backend capabilities with new product design requirements."
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Agency",
-      period: "2018 - 2020",
-      description: "Developed responsive websites and web applications. Specialized in modern JavaScript frameworks and UI/UX implementation."
+      title: "BIG-TCR Summer Intern",
+      company: "McWilliams School of Biomedical Informatics at UTHealth Houston",
+      period: "Jun. 2023 - Aug. 2023",
+      location: "Houston, TX",
+      description: "Developed a chatbot to answer HPV-related questions using rule-based NLP, promoting public health education and reducing stigma around vaccination. Annotated clinical trial records with CLAMP to extract medical relations, accelerating NLP model development. Mentored PhD and postdoc researchers in Dr. Cui Tao's lab, training them to effectively use CLAMP."
     }
   ];
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      githubUrl: "#",
+      title: "PacOne",
+      description: "Engineered a modular Java game engine with plugin-based architecture and JSON-configured behaviors and assets. Created a JavaFX game design interface for specifying rules, collisions, and assets, exporting to JSON configs used by the runtime engine. Directed team workflows using Agile Sprints, GitLab issue tracking, and weekly standups to ensure steady progress.",
+      technologies: ["Java", "JavaFX", "TestFX", "GitLab"],
+      githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates. Built with React, Express, and MongoDB.",
-      technologies: ["React", "TypeScript", "MongoDB", "Socket.io"],
-      githubUrl: "#",
+      title: "Cell Society",
+      description: "Built a configurable Java simulation engine for cellular automata using XML input, enabling user-defined parameters and simulation setups. Implemented factory patterns to support extensible simulation types and customizable grid behaviors. Developed generalized rule-processing and neighbor strategies to dynamically handle state transitions across simulations.",
+      technologies: ["Java", "JavaFX", "TestFX", "GitLab", "XML"],
+      githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts and interactive maps. Integrated with multiple weather APIs.",
-      technologies: ["Vue.js", "API Integration", "Tailwind CSS"],
-      githubUrl: "#",
+      title: "Online Poker Game",
+      description: "Built a full-stack poker game with a Vue frontend, Node.js backend, and support for real-time multiplayer gameplay. Scaled socket.io server to support concurrent game sessions and added role-based access control via OIDC login. Deployed the app on Kubernetes with CI/CD integration and end-to-end testing to ensure production-grade reliability.",
+      technologies: ["Vue", "Node.js", "Express", "MongoDB", "Docker", "Kubernetes", "Playwright", "Socket.IO"],
+      githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     }
   ];
 
   const skills = [
-    { category: "Frontend", items: ["React", "TypeScript", "Vue.js", "Tailwind CSS", "Next.js"] },
-    { category: "Backend", items: ["Node.js", "Python", "Express", "FastAPI", "REST APIs"] },
-    { category: "Database", items: ["PostgreSQL", "MongoDB", "Redis", "MySQL"] },
-    { category: "Tools", items: ["Git", "Docker", "AWS", "CI/CD", "Jest"] }
+    { category: "Languages", items: ["Java", "Python", "C", "JavaScript", "TypeScript", "HTML/CSS", "Ruby", "Elixir"] },
+    { category: "Frameworks", items: ["React", "Node.js", "Flask", "Vue", "Rails", "Phoenix", "Express", "NestJS", "NextJS"] },
+    { category: "Databases", items: ["MongoDB", "Snowflake"] },
+    { category: "Tools", items: ["Git", "Docker", "Kubernetes", "Playwright", "TeamCity", "Nomad", "Kafka", "Swagger", "Jenkins"] }
   ];
 
   return (
@@ -64,7 +67,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-xl font-bold text-primary">John Doe</div>
+            <div className="text-xl font-bold text-primary">William He</div>
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
               <a href="#experience" className="text-foreground hover:text-primary transition-colors">Experience</a>
@@ -85,23 +88,27 @@ const Index = () => {
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            John Doe
+            William He
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-white/90">
-            Full Stack Software Engineer
+            Software Engineering Student
           </p>
           <p className="text-lg md:text-xl mb-8 text-white/80 max-w-2xl mx-auto">
-            Passionate about building scalable web applications and creating exceptional user experiences. 
-            Currently seeking new opportunities to make a meaningful impact.
+            Duke University student pursuing BSE in Electrical & Computer Engineering and BS in Computer Science. 
+            Passionate about building scalable systems and seeking full-time software engineering opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+              <a href="mailto:williamhe219@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Get In Touch
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/20 text-white hover:bg-white/20">
-              <Github className="mr-2 h-5 w-5" />
-              View GitHub
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <a href="https://github.com/wwh15" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                View GitHub
+              </a>
             </Button>
           </div>
         </div>
@@ -118,48 +125,49 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I'm a passionate full-stack developer with over 5 years of experience building 
-                web applications that solve real-world problems. I love working with modern 
-                technologies and am always eager to learn new skills.
+                I'm a passionate computer science and electrical engineering student at Duke University 
+                with hands-on experience in full-stack development and system architecture. I've completed 
+                internships at Capital One and Yext, where I built scalable systems and improved performance significantly.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                My expertise spans both frontend and backend development, with a strong focus 
-                on creating scalable, maintainable, and user-friendly applications.
+                My expertise spans Java, Python, JavaScript/TypeScript, and modern frameworks like React, Vue, 
+                and Node.js. I enjoy tackling complex problems, from building game engines to developing 
+                real-time multiplayer applications and optimizing large-scale systems.
               </p>
               <div className="flex items-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  <span>San Francisco, CA</span>
+                  <span>Durham, NC</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  <span>Available Now</span>
+                  <span>Graduating May 2026</span>
                 </div>
               </div>
             </div>
             
             <Card className="shadow-medium">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6">Quick Facts</h3>
+                <h3 className="text-2xl font-semibold mb-6">Education & Facts</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Experience</span>
-                    <span className="font-medium">5+ Years</span>
+                    <span className="text-muted-foreground">University</span>
+                    <span className="font-medium">Duke University</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Projects Completed</span>
-                    <span className="font-medium">25+</span>
+                    <span className="text-muted-foreground">Degree</span>
+                    <span className="font-medium">BSE ECE + BS CS</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Preferred Stack</span>
-                    <span className="font-medium">React + Node.js</span>
+                    <span className="text-muted-foreground">GPA</span>
+                    <span className="font-medium">3.8</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Status</span>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">Available</Badge>
+                    <Badge variant="secondary" className="bg-green-100 text-green-800">Seeking Full-Time</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -184,6 +192,7 @@ const Index = () => {
                     <div>
                       <CardTitle className="text-xl">{exp.title}</CardTitle>
                       <CardDescription className="text-primary font-medium">{exp.company}</CardDescription>
+                      <p className="text-sm text-muted-foreground mt-1">{exp.location}</p>
                     </div>
                     <Badge variant="outline" className="mt-2 md:mt-0 w-fit">
                       {exp.period}
@@ -215,15 +224,17 @@ const Index = () => {
                     {project.title}
                     <div className="flex gap-2">
                       <Button variant="ghost" size="sm" asChild>
-                        <a href={project.githubUrl}>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                           <Github className="h-4 w-4" />
                         </a>
                       </Button>
-                      <Button variant="ghost" size="sm" asChild>
-                        <a href={project.liveUrl}>
-                          <ExternalLink className="h-4 w-4" />
-                        </a>
-                      </Button>
+                      {project.liveUrl !== "#" && (
+                        <Button variant="ghost" size="sm" asChild>
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardTitle>
                 </CardHeader>
@@ -258,9 +269,9 @@ const Index = () => {
               <Card key={index} className="shadow-soft">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    {skillGroup.category === "Frontend" && <Globe className="h-5 w-5" />}
-                    {skillGroup.category === "Backend" && <Code2 className="h-5 w-5" />}
-                    {skillGroup.category === "Database" && <Database className="h-5 w-5" />}
+                    {skillGroup.category === "Languages" && <Code2 className="h-5 w-5" />}
+                    {skillGroup.category === "Frameworks" && <Globe className="h-5 w-5" />}
+                    {skillGroup.category === "Databases" && <Database className="h-5 w-5" />}
                     {skillGroup.category === "Tools" && <Smartphone className="h-5 w-5" />}
                     {skillGroup.category}
                   </CardTitle>
@@ -287,22 +298,28 @@ const Index = () => {
           <div className="w-20 h-1 bg-gradient-primary mx-auto mb-8" />
           
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I'm currently seeking new opportunities and would love to hear about your project. 
-            Let's discuss how we can work together to bring your ideas to life.
+            I'm actively seeking full-time software engineering opportunities starting in 2026. 
+            Let's connect to discuss how I can contribute to your team with my technical skills and passion for building great software.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              <Mail className="mr-2 h-5 w-5" />
-              john.doe@email.com
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+              <a href="mailto:williamhe219@gmail.com">
+                <Mail className="mr-2 h-5 w-5" />
+                williamhe219@gmail.com
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+              <a href="https://www.linkedin.com/in/willhe219/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-              <Github className="mr-2 h-5 w-5" />
-              GitHub
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+              <a href="https://github.com/wwh15" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-5 w-5" />
+                GitHub
+              </a>
             </Button>
           </div>
         </div>
@@ -311,7 +328,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-foreground text-background py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p>&copy; 2024 John Doe. Built with React and Tailwind CSS.</p>
+          <p>&copy; 2024 William He. Built with React and Tailwind CSS.</p>
         </div>
       </footer>
     </div>
