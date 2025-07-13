@@ -38,9 +38,9 @@ const Index = () => {
     {
       title: "PacOne",
       description:
-          "Designed a modular game engine in Java with plugin support and configurable game logic via JSON. Built a visual JavaFX-based editor for non-technical users and led team coordination through Agile workflows and GitLab.",
+          "Developed a modular Java game engine focused on customizable gameplay and player experience, with game logic configurable through JSON. Created an intuitive JavaFX visual editor empowering non-technical users to design and test game rules and behaviors seamlessly.",
       technologies: ["Java", "JavaFX", "TestFX", "GitLab", "JSON"],
-      githubUrl: "https://github.com/wwh15",
+      githubUrl: "https://github.com/wwh15/PacOne",
       liveUrl: "#"
     },
     {
@@ -48,7 +48,7 @@ const Index = () => {
       description:
           "Created a flexible simulation engine for cellular automata driven by XML configuration. Supported multiple simulation types using factory patterns and generalized rule-processing for dynamic state transitions.",
       technologies: ["Java", "JavaFX", "TestFX", "GitLab", "XML"],
-      githubUrl: "https://github.com/wwh15",
+      githubUrl: "https://github.com/wwh15/CellSociety",
       liveUrl: "#"
     },
     {
@@ -56,7 +56,7 @@ const Index = () => {
       description:
           "Built a full-stack real-time poker game with Vue and Node, using Socket.IO for multiplayer and OIDC for authentication. Deployed via Kubernetes with CI/CD and added Playwright tests for production reliability.",
       technologies: ["Vue", "Node.js", "Express", "MongoDB", "Docker", "Kubernetes", "Playwright", "Socket.IO"],
-      githubUrl: "https://github.com/wwh15",
+      githubUrl: "https://github.com/wwh15/poker",
       liveUrl: "#"
     }
   ];
