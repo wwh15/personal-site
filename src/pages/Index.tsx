@@ -156,7 +156,7 @@ const Index = () => {
 
             <div className="w-full h-auto rounded-2xl overflow-hidden aspect-[5/7] shadow-medium">
               <img
-                  src="src/assets/will.jpeg" // Replace with your actual image path
+                  src="/will.jpeg" // Replace with your actual image path
                   alt="William He"
                   className="w-full h-auto object-cover"
               />
