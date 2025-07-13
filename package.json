@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://wwh15.github.io/personal-site",
+  "homepage": "https://wwh15.github.io/personal-site/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
