@@ -12,53 +12,61 @@ const Index = () => {
       company: "Capital One",
       period: "Jun. 2025 - Present",
       location: "Richmond, VA",
-      description: "Building an audit log system using NestJS to track and display changes made to over 10,000 SKUs, improving agent triage time by 200%. Integrating SevenRooms API via backend service layer to automate restaurant bookings, reducing scheduling time. Leveraging event-driven architecture to enable real-time SevenRooms match results and audit log updates, handling over 1,000 asynchronous events daily."
+      description:
+          "Currently building backend infrastructure to streamline SKU change tracking using NestJS and Kafka, improving triage time by 200%. Also integrating the SevenRooms API to automate restaurant bookings and support real-time updates with an event-driven architecture handling 1,000+ async events daily."
     },
     {
       title: "Software Engineer Intern",
       company: "Yext",
       period: "Jun. 2024 - Aug. 2024",
-      location: "Washington D.C.",
-      description: "Developed REST API endpoints for review categorization, allowing users to group reviews by themes for more insights. Achieved a 40x performance improvement by refactoring a network call, resolving latency issues caused by large review volumes from a platform migration. Extended database schema and updated CRUD operations to support pre-defined review themes, aligning backend capabilities with new product design requirements."
+      location: "Washington, D.C.",
+      description:
+          "Built scalable backend features for a review analysis product, including REST APIs and schema changes to support categorized insights. Diagnosed and resolved a performance bottleneck, improving review ingestion speeds by 40x during a major platform migration."
     },
     {
       title: "BIG-TCR Summer Intern",
-      company: "McWilliams School of Biomedical Informatics at UTHealth Houston",
+      company: "UTHealth Houston - McWilliams School of Biomedical Informatics",
       period: "Jun. 2023 - Aug. 2023",
       location: "Houston, TX",
-      description: "Developed a chatbot to answer HPV-related questions using rule-based NLP, promoting public health education and reducing stigma around vaccination. Annotated clinical trial records with CLAMP to extract medical relations, accelerating NLP model development. Mentored PhD and postdoc researchers in Dr. Cui Tao's lab, training them to effectively use CLAMP."
+      description:
+          "Developed a rule-based NLP chatbot to answer HPV-related questions and support public health outreach. Also annotated clinical trial data to train CLAMP models and led internal trainings for researchers on using the tool effectively."
     }
   ];
+
 
   const projects = [
     {
       title: "PacOne",
-      description: "Engineered a modular Java game engine with plugin-based architecture and JSON-configured behaviors and assets. Created a JavaFX game design interface for specifying rules, collisions, and assets, exporting to JSON configs used by the runtime engine. Directed team workflows using Agile Sprints, GitLab issue tracking, and weekly standups to ensure steady progress.",
-      technologies: ["Java", "JavaFX", "TestFX", "GitLab"],
+      description:
+          "Designed a modular game engine in Java with plugin support and configurable game logic via JSON. Built a visual JavaFX-based editor for non-technical users and led team coordination through Agile workflows and GitLab.",
+      technologies: ["Java", "JavaFX", "TestFX", "GitLab", "JSON"],
       githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     },
     {
       title: "Cell Society",
-      description: "Built a configurable Java simulation engine for cellular automata using XML input, enabling user-defined parameters and simulation setups. Implemented factory patterns to support extensible simulation types and customizable grid behaviors. Developed generalized rule-processing and neighbor strategies to dynamically handle state transitions across simulations.",
+      description:
+          "Created a flexible simulation engine for cellular automata driven by XML configuration. Supported multiple simulation types using factory patterns and generalized rule-processing for dynamic state transitions.",
       technologies: ["Java", "JavaFX", "TestFX", "GitLab", "XML"],
       githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     },
     {
       title: "Online Poker Game",
-      description: "Built a full-stack poker game with a Vue frontend, Node.js backend, and support for real-time multiplayer gameplay. Scaled socket.io server to support concurrent game sessions and added role-based access control via OIDC login. Deployed the app on Kubernetes with CI/CD integration and end-to-end testing to ensure production-grade reliability.",
+      description:
+          "Built a full-stack real-time poker game with Vue and Node, using Socket.IO for multiplayer and OIDC for authentication. Deployed via Kubernetes with CI/CD and added Playwright tests for production reliability.",
       technologies: ["Vue", "Node.js", "Express", "MongoDB", "Docker", "Kubernetes", "Playwright", "Socket.IO"],
       githubUrl: "https://github.com/wwh15",
       liveUrl: "#"
     }
   ];
 
+
   const skills = [
     { category: "Languages", items: ["Java", "Python", "C", "JavaScript", "TypeScript", "HTML/CSS", "Ruby", "Elixir"] },
     { category: "Frameworks", items: ["React", "Node.js", "Flask", "Vue", "Rails", "Phoenix", "Express", "NestJS", "NextJS"] },
-    { category: "Databases", items: ["MongoDB", "Snowflake"] },
-    { category: "Tools", items: ["Git", "Docker", "Kubernetes", "Playwright", "TeamCity", "Nomad", "Kafka", "Swagger", "Jenkins"] }
+    { category: "Databases", items: ["MongoDB", "Snowflake", "SQL", "MySQL", "PostgreSQL"] },
+    { category: "Tools", items: ["Git", "Docker", "Kubernetes", "Playwright", "TeamCity", "Nomad", "Kafka", "Swagger", "Jenkins", "Postman"] }
   ];
 
   return (
@@ -137,7 +145,7 @@ const Index = () => {
               <div className="flex items-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
-                  <span>Durham, NC</span>
+                  <span>Duke University</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
@@ -145,33 +153,14 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
-            <Card className="shadow-medium">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6">Education & Facts</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">University</span>
-                    <span className="font-medium">Duke University</span>
-                  </div>
-                  <Separator />
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Degree</span>
-                    <span className="font-medium">BSE ECE + BS CS</span>
-                  </div>
-                  <Separator />
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">GPA</span>
-                    <span className="font-medium">3.8</span>
-                  </div>
-                  <Separator />
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Status</span>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">Seeking Full-Time</Badge>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
+            <div className="w-full h-auto rounded-2xl overflow-hidden aspect-[5/7] shadow-medium">
+              <img
+                  src="src/assets/will.jpeg" // Replace with your actual image path
+                  alt="William He"
+                  className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
