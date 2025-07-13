@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Mail, ExternalLink, MapPin, Calendar, Code2, Database, Globe, Smartphone } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import React = require("react");
 
 const Index = () => {
   const experiences = [
